@@ -31,13 +31,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import mt19937 from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-mt19937@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/random-array-mt19937/tags). For example,
+
+```javascript
 import mt19937 from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-mt19937@v0.0.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-mt19937@v0.0.1-esm/index.mjs';
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-mt19937@esm/index.mjs';
 ```
 
 #### mt19937( len\[, options] )
@@ -246,7 +251,7 @@ var sz = mt19937.byteLength;
 <script type="module">
 
 import logEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@esm/index.mjs';
-import mt19937 from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-mt19937@v0.0.1-esm/index.mjs';
+import mt19937 from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-mt19937@esm/index.mjs';
 
 // Create a function for generating random arrays originating from the same state:
 var random = mt19937.factory({
