@@ -35,25 +35,30 @@ limitations under the License.
 
 > Create an array containing pseudorandom numbers generated using a 32-bit [Mersenne Twister][@stdlib/random/base/mt19937] pseudorandom number generator.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/random-array-mt19937
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import mt19937 from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-mt19937@esm/index.mjs';
-```
-The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/random-array-mt19937/tags). For example,
-
-```javascript
-import mt19937 from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-mt19937@v0.1.0-esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-mt19937@esm/index.mjs';
+var mt19937 = require( '@stdlib/random-array-mt19937' );
 ```
 
 #### mt19937( len\[, options] )
@@ -255,14 +260,9 @@ var sz = mt19937.byteLength;
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import logEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@esm/index.mjs';
-import mt19937 from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-mt19937@esm/index.mjs';
+```javascript
+var logEach = require( '@stdlib/console-log-each' );
+var mt19937 = require( '@stdlib/random-array-mt19937' );
 
 // Create a function for generating random arrays originating from the same state:
 var random = mt19937.factory({
@@ -289,10 +289,6 @@ var x4 = random.normalized( 15 );
 
 // Print the contents:
 logEach( '%f', x4 );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -316,7 +312,7 @@ logEach( '%f', x4 );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -346,8 +342,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/random-array-mt19937.svg
 [npm-url]: https://npmjs.org/package/@stdlib/random-array-mt19937
 
-[test-image]: https://github.com/stdlib-js/random-array-mt19937/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/random-array-mt19937/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/random-array-mt19937/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/random-array-mt19937/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/random-array-mt19937/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/random-array-mt19937?branch=main
@@ -376,15 +372,15 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/random-array-mt19937/main/LICENSE
 
-[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937/tree/esm
+[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937
 
-[@stdlib/array/typed-real-float-dtypes]: https://github.com/stdlib-js/array-typed-real-float-dtypes/tree/esm
+[@stdlib/array/typed-real-float-dtypes]: https://github.com/stdlib-js/array-typed-real-float-dtypes
 
-[@stdlib/array/typed-real-dtypes]: https://github.com/stdlib-js/array-typed-real-dtypes/tree/esm
+[@stdlib/array/typed-real-dtypes]: https://github.com/stdlib-js/array-typed-real-dtypes
 
-[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64/tree/esm
+[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64
 
-[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32/tree/esm
+[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
 
 </section>
 
