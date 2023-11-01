@@ -39,8 +39,8 @@
   "dependencies": {
     "@stdlib/array-base-filled-by": "^0.1.0",
     "@stdlib/array-typed-real-ctors": "^0.1.0",
-    "@stdlib/array-typed-real-dtypes": "^0.1.0",
-    "@stdlib/array-typed-real-float-dtypes": "^0.1.0",
+    "@stdlib/array-typed-real-dtypes": "^0.1.1",
+    "@stdlib/array-typed-real-float-dtypes": "^0.1.1",
     "@stdlib/assert-has-own-property": "^0.1.1",
     "@stdlib/assert-is-nonnegative-integer": "^0.1.0",
     "@stdlib/assert-is-plain-object": "^0.1.1",
@@ -53,10 +53,10 @@
     "@stdlib/utils-define-nonenumerable-read-write-accessor": "^0.1.1"
   },
   "devDependencies": {
-    "@stdlib/array-float32": "^0.1.0",
-    "@stdlib/array-float64": "^0.1.0",
-    "@stdlib/array-int32": "^0.1.0",
-    "@stdlib/array-uint32": "^0.1.0",
+    "@stdlib/array-float32": "^0.1.1",
+    "@stdlib/array-float64": "^0.1.1",
+    "@stdlib/array-int32": "^0.1.1",
+    "@stdlib/array-uint32": "^0.1.1",
     "@stdlib/assert-is-uint32array": "^0.1.1",
     "@stdlib/bench": "^0.1.0",
     "@stdlib/console-log-each": "^0.1.0",

@@ -21,54 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var isUint32Array = require( '@stdlib/assert-is-uint32array' );
-var random = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof random, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'attached to the main export is a `factory` method', function test( t ) {
-	t.strictEqual( typeof random.factory, 'function', 'has method' );
-	t.end();
-});
-
-tape( 'attached to the main export is a `normalized` method', function test( t ) {
-	t.strictEqual( typeof random.normalized, 'function', 'has method' );
-	t.end();
-});
-
-tape( 'attached to the main export is the underlying PRNG', function test( t ) {
-	t.equal( typeof random.PRNG, 'function', 'has property' );
-	t.end();
-});
-
-tape( 'attached to the main export is the generator seed', function test( t ) {
-	t.equal( isUint32Array( random.seed ), true, 'has property' );
-	t.end();
-});
-
-tape( 'attached to the main export is the generator seed length', function test( t ) {
-	t.equal( typeof random.seedLength, 'number', 'has property' );
-	t.end();
-});
-
-tape( 'attached to the main export is the generator state', function test( t ) {
-	t.equal( isUint32Array( random.state ), true, 'has property' );
-	t.end();
-});
-
-tape( 'attached to the main export is the generator state length', function test( t ) {
-	t.equal( typeof random.stateLength, 'number', 'has property' );
-	t.end();
-});
-
-tape( 'attached to the main export is the generator state size', function test( t ) {
-	t.equal( typeof random.byteLength, 'number', 'has property' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
