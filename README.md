@@ -35,38 +35,30 @@ limitations under the License.
 
 > Create an array containing pseudorandom numbers generated using a 32-bit [Mersenne Twister][@stdlib/random/base/mt19937] pseudorandom number generator.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/random-array-mt19937
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-mt19937 = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-mt19937@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var mt19937 = require( 'path/to/vendor/umd/random-array-mt19937/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-mt19937@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.mt19937;
-})();
-</script>
+var mt19937 = require( '@stdlib/random-array-mt19937' );
 ```
 
 #### mt19937( len\[, options] )
@@ -268,14 +260,9 @@ var sz = mt19937.byteLength;
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-mt19937@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var logEach = require( '@stdlib/console-log-each' );
+var mt19937 = require( '@stdlib/random-array-mt19937' );
 
 // Create a function for generating random arrays originating from the same state:
 var random = mt19937.factory({
@@ -302,11 +289,6 @@ var x4 = random.normalized( 15 );
 
 // Print the contents:
 logEach( '%f', x4 );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -316,6 +298,14 @@ logEach( '%f', x4 );
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/random-array/randu`][@stdlib/random/array/randu]</span><span class="delimiter">: </span><span class="description">create an array containing uniformly distributed pseudorandom numbers between 0 and 1.</span>
+-   <span class="package-name">[`@stdlib/random-base/mt19937`][@stdlib/random/base/mt19937]</span><span class="delimiter">: </span><span class="description">A 32-bit Mersenne Twister pseudorandom number generator.</span>
+-   <span class="package-name">[`@stdlib/random-strided/mt19937`][@stdlib/random/strided/mt19937]</span><span class="delimiter">: </span><span class="description">fill a strided array with pseudorandom numbers generated using a 32-bit Mersenne Twister pseudorandom number generator.</span>
 
 </section>
 
@@ -390,15 +380,23 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/random-array-mt19937/main/LICENSE
 
-[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937/tree/umd
+[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937
 
-[@stdlib/array/typed-real-float-dtypes]: https://github.com/stdlib-js/array-typed-real-float-dtypes/tree/umd
+[@stdlib/array/typed-real-float-dtypes]: https://github.com/stdlib-js/array-typed-real-float-dtypes
 
-[@stdlib/array/typed-real-dtypes]: https://github.com/stdlib-js/array-typed-real-dtypes/tree/umd
+[@stdlib/array/typed-real-dtypes]: https://github.com/stdlib-js/array-typed-real-dtypes
 
-[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64/tree/umd
+[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64
 
-[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32/tree/umd
+[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
+
+<!-- <related-links> -->
+
+[@stdlib/random/array/randu]: https://github.com/stdlib-js/random-array-randu
+
+[@stdlib/random/strided/mt19937]: https://github.com/stdlib-js/random-strided-mt19937
+
+<!-- </related-links> -->
 
 </section>
 
