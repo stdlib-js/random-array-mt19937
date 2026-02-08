@@ -35,32 +35,20 @@ limitations under the License.
 
 > Create an array containing pseudorandom numbers generated using a 32-bit [Mersenne Twister][@stdlib/random/base/mt19937] pseudorandom number generator.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/random-array-mt19937
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var mt19937 = require( '@stdlib/random-array-mt19937' );
+import mt19937 from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-mt19937@deno/mod.js';
+```
+
+You can also import the following named exports from the package:
+
+```javascript
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-mt19937@deno/mod.js';
 ```
 
 #### mt19937( len\[, options] )
@@ -263,8 +251,8 @@ var sz = mt19937.byteLength;
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var logEach = require( '@stdlib/console-log-each' );
-var mt19937 = require( '@stdlib/random-array-mt19937' );
+import logEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@deno/mod.js';
+import mt19937 from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-mt19937@deno/mod.js';
 
 // Create a function for generating random arrays originating from the same state:
 var random = mt19937.factory({
@@ -322,7 +310,7 @@ logEach( '%f', x4 );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -385,21 +373,21 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/random-array-mt19937/main/LICENSE
 
-[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937
+[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937/tree/deno
 
-[@stdlib/array/typed-real-float-dtypes]: https://github.com/stdlib-js/array-typed-real-float-dtypes
+[@stdlib/array/typed-real-float-dtypes]: https://github.com/stdlib-js/array-typed-real-float-dtypes/tree/deno
 
-[@stdlib/array/typed-real-dtypes]: https://github.com/stdlib-js/array-typed-real-dtypes
+[@stdlib/array/typed-real-dtypes]: https://github.com/stdlib-js/array-typed-real-dtypes/tree/deno
 
-[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64
+[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64/tree/deno
 
-[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
+[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32/tree/deno
 
 <!-- <related-links> -->
 
-[@stdlib/random/array/randu]: https://github.com/stdlib-js/random-array-randu
+[@stdlib/random/array/randu]: https://github.com/stdlib-js/random-array-randu/tree/deno
 
-[@stdlib/random/strided/mt19937]: https://github.com/stdlib-js/random-strided-mt19937
+[@stdlib/random/strided/mt19937]: https://github.com/stdlib-js/random-strided-mt19937/tree/deno
 
 <!-- </related-links> -->
 
