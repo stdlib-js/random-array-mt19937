@@ -44,7 +44,7 @@
     "@stdlib/assert-has-own-property": "^0.2.3",
     "@stdlib/assert-is-nonnegative-integer": "^0.2.3",
     "@stdlib/assert-is-plain-object": "^0.2.3",
-    "@stdlib/random-base-mt19937": "^0.2.2",
+    "@stdlib/random-base-mt19937": "^0.2.3",
     "@stdlib/strided-base-nullary": "^0.3.1",
     "@stdlib/string-format": "^0.2.3",
     "@stdlib/types": "^0.4.3",
